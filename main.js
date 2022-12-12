@@ -19,9 +19,9 @@ function setup(){
 
 function draw(){
     image(video, 0, 0, 350, 250)
-    fill(255, 0, 0)
-    stroke(255, 0, 0)
-    circle(noseX, noseY, 50)
+    //fill(255, 0, 0)
+    //stroke(255, 0, 0)
+    //circle(noseX, noseY, 50)
     image(bigode, noseX, noseY, 75, 80)
 }
 
@@ -33,8 +33,8 @@ function gotPoses(results){
     if(results.length > 0){
         console.log(results);
         console.log("narizX" + results[0].pose.nose.x)
-        noseX = results[0].pose.nose.x+25
-        noseY = results[0].pose.nose.y-2
+        noseX = results[0].pose.nose.x+19
+        noseY = results[0].pose.nose.y-124
     }
 
 }
